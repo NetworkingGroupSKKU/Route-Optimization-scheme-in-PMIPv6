@@ -13,12 +13,12 @@ Base on the scheme of RO, The implementation of RO feature has 3 modules as desc
 * RO Trigger: The module operates under network layer at LMA to recognize the communication between MN1 and MN2). Based on that, it determines to perform RO procedure. The module is green block in Fig. 2.
 * RO Module: Operate on user space to exchange information with RO Trigger module. Based on that information, it controls the route and tunnel of communication between MNs. The module is yellow block in Fig. 2.
 * RO Messages: There are some new messages in RO implementation. These messages are implemented in “Handler and Messages” modules or blue block in Fig. 2. These messages are listed below:
-** RO Trigger (ROT): send from LMA1 to LMA2.
-** RO Trigger Ack (ROTA): reply from LMA2 to LMA1
-** RO Init (ROI): send from LMA to MAG to order making RO between MNs.
-** RO Init Ack (ROIA): reply from MAG to LMA.
-** RO Setup (ROS): send from MAG to other MAG to request create an optimal path.
-** RO Setup Ack (ROSA): a response of ROS message
+ + RO Trigger (ROT): send from LMA1 to LMA2.
+ + RO Trigger Ack (ROTA): reply from LMA2 to LMA1
+ + RO Init (ROI): send from LMA to MAG to order making RO between MNs.
+ + RO Init Ack (ROIA): reply from MAG to LMA.
+ + RO Setup (ROS): send from MAG to other MAG to request create an optimal path.
+ + RO Setup Ack (ROSA): a response of ROS message
  
 ![Alt text](http://monet.skku.ac.kr/img/open-source/Route-Optimization-2.gif "Fig. 2. OAI PMIPv6 including RO feature.") 
 Fig. 2 OAI PMIPv6 including RO feature.
